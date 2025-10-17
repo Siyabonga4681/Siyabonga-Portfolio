@@ -82,6 +82,39 @@
       margin: 0;
       font-size: 14px;
     }
+    
+    /* CV Section Styles */
+    .cv-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .cv-section {
+      margin-bottom: 20px;
+    }
+    .cv-section h3 {
+      color: var(--primary);
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 8px;
+      margin-bottom: 12px;
+    }
+    .cv-item {
+      margin-bottom: 12px;
+    }
+    .cv-item strong {
+      color: var(--primary);
+    }
+    .cv-contact {
+      background: #f8fafc;
+      padding: 16px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+    @media (max-width: 768px) {
+      .cv-grid {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </head>
 <body>
@@ -93,10 +126,10 @@
           <h1>Siyabonga Jiyane</h1>
           <p class="small">Work Readiness Training Portfolio — 2025</p>
           <nav>
+            <a href="#cv">Curriculum Vitae</a>
             <a href="#artefacts">Artefacts</a>
             <a href="#mock-interview-video">Mock Interview</a>
             <a href="#reflection">Reflection</a>
-            <a href="#summary">Summary</a>
             <a href="#certifications">Certifications</a>
             <a href="#contact">Contact</a>
           </nav>
@@ -133,6 +166,84 @@
           <p>Integrated skill set preparation for successful transition into professional environments.</p>
         </div>
       </div>
+    </section>
+
+    <section id="cv">
+      <h2>Curriculum Vitae</h2>
+      <div class="cv-contact">
+        <h3>Contact Details</h3>
+        <p><strong>Address:</strong> 7306 Ramabanta Street, Brakpan, 1550, Tsakane</p>
+        <p><strong>Phone:</strong> 081 468 1251</p>
+        <p><strong>Email:</strong> Siyabongacooper69@gmail.com</p>
+      </div>
+      
+      <div class="cv-grid">
+        <div>
+          <div class="cv-section">
+            <h3>Personal Details</h3>
+            <div class="cv-item"><strong>First Name:</strong> Siyabonga</div>
+            <div class="cv-item"><strong>Last Name:</strong> Jiyane</div>
+            <div class="cv-item"><strong>Date of Birth:</strong> 25 May 2003</div>
+            <div class="cv-item"><strong>Gender:</strong> Male</div>
+            <div class="cv-item"><strong>Marital Status:</strong> Single</div>
+            <div class="cv-item"><strong>Nationality:</strong> South African</div>
+            <div class="cv-item"><strong>Home Language:</strong> IsiZulu</div>
+            <div class="cv-item"><strong>Other Languages:</strong> English</div>
+            <div class="cv-item"><strong>Health:</strong> Excellent</div>
+            <div class="cv-item"><strong>Religion:</strong> Christian</div>
+            <div class="cv-item"><strong>Criminal Record:</strong> None</div>
+            <div class="cv-item"><strong>Availability:</strong> Immediately</div>
+          </div>
+          
+          <div class="cv-section">
+            <h3>Work Experience</h3>
+            <div class="cv-item">
+              <strong>Company:</strong> Shoprite Climor DC<br>
+              <strong>Position:</strong> General Worker
+            </div>
+          </div>
+          
+          <div class="cv-section">
+            <h3>Reference</h3>
+            <div class="cv-item">
+              <strong>Name:</strong> Samkelo Mxiza<br>
+              <strong>Company:</strong> Shoprite Climor DC<br>
+              <strong>Position:</strong> Team Leader
+            </div>
+          </div>
+        </div>
+        
+        <div>
+          <div class="cv-section">
+            <h3>Educational Qualification</h3>
+            <div class="cv-item">
+              <strong>Last School Attended:</strong> Tsakane High School<br>
+              <strong>Highest Grade Passed:</strong> 12<br>
+              <strong>Year:</strong> 2020
+            </div>
+            
+            <h4>Subjects</h4>
+            <ul>
+              <li>Geography</li>
+              <li>English FAL</li>
+              <li>Isizulu HOME</li>
+              <li>Life Orientation</li>
+              <li>History</li>
+              <li>Tourism</li>
+              <li>Mathematical Literacy</li>
+            </ul>
+          </div>
+          
+          <div class="cv-section">
+            <h3>Personal Attributes</h3>
+            <p>I am a young <strong>hardworking</strong> and career-minded person with the aptitude for creating problem solving and analysing with attention to details. I have <strong>excellent team skills</strong> and <strong>strong communication abilities</strong>, also flexible and self-motivated. I value personal integrity and work well with minimum supervision.</p>
+          </div>
+        </div>
+      </div>
+      
+      <p style="text-align: center; margin-top: 20px;">
+        <a class="btn" href="CURRICULUM VITAE OF SIYABONGA JIYANE.docx" target="_blank">Download Full CV (DOCX)</a>
+      </p>
     </section>
 
     <section id="artefacts">
@@ -266,18 +377,6 @@
         </dl>
       </article>
 
-    </section>
-
-    <section id="summary">
-      <h2>Summary & Connection</h2>
-      <p>All artefacts are connected through the theme of <strong>continuous professional growth</strong>. Evidence demonstrates improvement in communication, interview readiness, professional networking, and workplace etiquette. Together they show readiness for entry-level professional roles.</p>
-      <h3>Skills Gained</h3>
-      <ul>
-        <li>Effective workplace communication</li>
-        <li>Structured interview responses (STAR)</li>
-        <li>Professional online presence (LinkedIn)</li>
-        <li>Time management and workplace etiquette</li>
-      </ul>
     </section>
 
     <section id="certifications">
