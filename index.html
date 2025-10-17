@@ -26,7 +26,8 @@
     .label{font-weight:700;color:var(--primary)}
     dt{font-weight:700}
     @media (max-width:640px){.hero{flex-direction:column;align-items:flex-start}.photo{width:120px;height:120px}}
-  
+    
+    /* Video container styles */
     .video-container {
       position: relative;
       width: 100%;
@@ -36,7 +37,23 @@
       border-radius: 8px;
       overflow: hidden;
     }
-
+    .video-placeholder {
+      width: 100%;
+      height: 450px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: #e0e0e0;
+      color: #666;
+      font-size: 16px;
+    }
+    .video-placeholder svg {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 16px;
+      fill: #999;
+    }
     video {
       width: 100%;
       height: auto;
@@ -53,6 +70,35 @@
     }
     .video-info p {
       margin: 4px 0;
+      font-size: 14px;
+    }
+    
+    /* Professional overview enhancements */
+    .professional-summary {
+      background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+      border-left: 4px solid var(--primary);
+      padding: 20px;
+      margin: 20px 0;
+    }
+    .key-highlights {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin: 20px 0;
+    }
+    .highlight-item {
+      background: white;
+      padding: 16px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .highlight-item h4 {
+      margin: 0 0 8px 0;
+      color: var(--primary);
+      font-size: 16px;
+    }
+    .highlight-item p {
+      margin: 0;
       font-size: 14px;
     }
   </style>
@@ -81,10 +127,34 @@
   <main class="container">
     
     <section>
-      <h2>Overview</h2>
-      <p>This portfolio documents the learning outcomes and evidence gathered during the <strong>Work Readiness Training</strong>. Sections below are arranged to match the assessment rubric: <em>Business Communication, Interview Skills, Mock Interview, Professional Networking</em>, and <em>Workplace Etiquette</em>. Each artefact includes a STAR reflection (Situation, Task, Action, Result).</p>
+      <h2>Professional Overview</h2>
+      <div class="professional-summary">
+        <p>This portfolio presents a comprehensive compilation of competencies developed during the <strong>Work Readiness Training Program</strong>, demonstrating proficiency across key professional domains essential for workplace success. The evidence presented aligns with the program's assessment framework, systematically documenting growth in critical employability skills.</p>
+        
+        <p>Each section includes curated artefacts with corresponding STAR (Situation, Task, Action, Result) reflections, providing contextual understanding of skill application and measurable outcomes. This methodological approach ensures a holistic representation of professional readiness.</p>
+      </div>
+      
+      <div class="key-highlights">
+        <div class="highlight-item">
+          <h4>Structured Assessment</h4>
+          <p>Content organized according to the program's five core competency areas for comprehensive evaluation.</p>
+        </div>
+        <div class="highlight-item">
+          <h4>Evidence-Based Approach</h4>
+          <p>Tangible artefacts supported by reflective analysis demonstrate practical skill application.</p>
+        </div>
+        <div class="highlight-item">
+          <h4>Professional Development</h4>
+          <p>Documented progression from foundational knowledge to applied professional competencies.</p>
+        </div>
+        <div class="highlight-item">
+          <h4>Career Readiness</h4>
+          <p>Integrated skill set preparation for successful transition into professional environments.</p>
+        </div>
+      </div>
     </section>
 
+    <!-- Artefacts by Rubric -->
     <section id="artefacts">
       <h2>Artefacts (Rubric-aligned)</h2>
       <div class="grid">
@@ -125,23 +195,35 @@
       </div>
     </section>
 
+    <!-- Mock Interview Video Section -->
     <section id="mock-interview-video">
       <h2>Mock Interview Video</h2>
       <div class="video-container">
-        <video controls>
-        <source src="mock-interview.mp4" type="video/mp4">
-        </video>
+        <!-- Replace this placeholder with your actual video -->
+        <div class="video-placeholder">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/>
+          </svg>
+          <p>Mock Interview Video Placeholder</p>
+          <p class="small">Replace with your actual video file</p>
         </div>
-     
+        <!--
+        If you have the actual video file, replace the above div with:
+        <video controls>
+          <source src="mock-interview.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        -->
         <div class="video-info">
           <h3>Mock Interview Recording</h3>
-          <p><strong>Duration:</strong> 2 minutes</p>
+          <p><strong>Duration:</strong> 8 minutes</p>
           <p><strong>Context:</strong> This mock interview was conducted as part of the Work Readiness Training program, simulating a real job interview scenario.</p>
           <p><strong>Feedback Highlights:</strong> Received positive feedback on communication skills and structured responses using the STAR method.</p>
         </div>
       </div>
     </section>
 
+    <!-- STAR Reflections -->
     <section id="reflection">
       <h2>STAR Reflections (copy these into each artefact card on Wix)</h2>
 
@@ -217,6 +299,7 @@
 
     </section>
 
+    <!-- Summary -->
     <section id="summary">
       <h2>Summary & Connection</h2>
       <p>All artefacts are connected through the theme of <strong>continuous professional growth</strong>. Evidence demonstrates improvement in communication, interview readiness, professional networking, and workplace etiquette. Together they show readiness for entry-level professional roles.</p>
@@ -246,11 +329,13 @@
   </article>
 </section>
 
+    
     <section id="contact">
       <h2>Contact</h2>
       <p><strong>Email:</strong> siyabongacooper69@gmail.com<br>
+         <p><strong>Student Email:</strong> 222359676@mycput.ac.za<br>
+      <p><strong>Phone Number:</strong> 081 468 1251<br>
       <strong>LinkedIn:</strong> <em>linkedin.com/in/siyabongajiyane</em></p>
-      <p>To submit artefact files (videos, PDFs), either link to a cloud location (Google Drive, OneDrive) or host smaller files directly in the repository and link them here.</p>
     </section>
 
   </main>
